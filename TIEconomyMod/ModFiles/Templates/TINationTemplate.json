@@ -1,0 +1,253 @@
+[
+ {
+   "dataName": "ALN",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+},
+ {
+   "dataName": "DZA",
+   "initSpaceIPs": 100,
+   "nuclearProgramIPs": 360,
+},
+ {
+   "dataName": "AGO",
+   "initSpaceIPs": 100,
+},
+ {
+   "dataName": "ARG",
+   "initSpaceIPs": 100,
+   "nuclearProgramIPs": 480,
+},
+ {
+   "dataName": "AUS",
+   "initSpaceIPs": 300,
+   "buildArmyIPs": 1050,
+   "buildNavyIPs": 1200,
+},
+ {
+   "dataName": "NET",
+   "initSpaceIPs": 650,
+   "buildArmyIPs": 150,
+},
+ {
+   "dataName": "BRA",
+   "initSpaceIPs": 400,
+   "nuclearProgramIPs": 180,
+   "buildArmyIPs": 900,
+},
+ {
+   "dataName": "CAL",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "CAN",
+   "initSpaceIPs": 600,
+   "buildArmyIPs": 240,
+},
+ {
+   "dataName": "CHN",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildNukeIPs": 240,
+   "buildArmyIPs": 600,
+},
+ {
+   "dataName": "COD",
+   "initSpaceIPs": 20,
+},
+ {
+   "dataName": "CZE",
+   "buildArmyIPs": 60,
+},
+ {
+   "dataName": "CSA",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+},
+ {
+   "dataName": "EGY",
+   "initSpaceIPs": 100,
+},
+ {
+   "dataName": "ETH",
+   "buildArmyIPs": 120,
+},
+ {
+   "dataName": "FIN",
+   "buildArmyIPs": 120,
+},
+ {
+   "dataName": "EUA",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildArmyIPs": 120,
+},
+ {
+   "dataName": "DEU",
+   "initSpaceIPs": 900,
+   "buildArmyIPs": 900,
+},
+ {
+   "dataName": "GRE",
+   "buildArmyIPs": 120,
+},
+ {
+   "dataName": "GUS",
+   "buildArmyIPs": 360,
+},
+ {
+   "dataName": "IND",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildNukeIPs": 360,
+   "buildArmyIPs": 1500,
+},
+ {
+   "dataName": "IDN",
+   "initSpaceIPs": 100,
+   "buildArmyIPs": 300,
+},
+ {
+   "dataName": "IRN",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 1800,
+   "buildArmyIPs": 60,
+},
+ {
+   "dataName": "ISR",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+},
+ {
+   "dataName": "ITA",
+   "initSpaceIPs": 1000,
+   "buildArmyIPs": 900,
+   "buildNavyIPs": 2400,
+},
+ {
+   "dataName": "JPN",
+   "initSpaceIPs": 1000,
+   "buildArmyIPs": 900,
+   "buildNavyIPs": 2940,
+},
+ {
+   "dataName": "KAZ",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "MYS",
+   "buildArmyIPs": 120,
+},
+ {
+   "dataName": "MEX",
+   "buildArmyIPs": 150,
+},
+ {
+   "dataName": "MNG",
+   "buildArmyIPs": 60,
+},
+ {
+   "dataName": "NZL",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "NGA",
+   "buildArmyIPs": 300,
+},
+ {
+   "dataName": "PRK",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildNukeIPs": 300,
+},
+ {
+   "dataName": "NOR",
+   "initSpaceIPs": 150,
+   "buildArmyIPs": 300,
+},
+ {
+   "dataName": "PAK",
+   "initSpaceIPs": 600,
+   "nuclearProgramIPs": 2400,
+   "buildNukeIPs": 60,
+   "buildArmyIPs": 480,
+},
+ {
+   "dataName": "POL",
+   "buildArmyIPs": 750,
+},
+ {
+   "dataName": "RNE",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "TEX",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "RUS",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildArmyIPs": 240,
+},
+ {
+   "dataName": "SEN",
+   "nuclearProgramIPs": 240,
+   "buildArmyIPs": 1500,
+},
+ {
+   "dataName": "ZAF",
+   "initSpaceIPs": 240,
+   "nuclearProgramIPs": 2400,
+},
+ {
+   "dataName": "KOR",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 600,
+},
+ {
+   "dataName": "ESP",
+   "initSpaceIPs": 900,
+   "buildArmyIPs": 600,
+},
+ {
+   "dataName": "SCA",
+   "buildArmyIPs": 180,
+},
+ {
+   "dataName": "SYR",
+   "nuclearProgramIPs": 180,
+},
+ {
+   "dataName": "TWN",
+   "initSpaceIPs": 600,
+   "nuclearProgramIPs": 600,
+},
+ {
+   "dataName": "THA",
+   "buildArmyIPs": 600,
+},
+ {
+   "dataName": "TUR",
+   "initSpaceIPs": 40,
+},
+ {
+   "dataName": "UKR",
+   "initSpaceIPs": 1000,
+},
+ {
+   "dataName": "GBR",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+},
+ {
+   "dataName": "USA",
+   "initSpaceIPs": 1000,
+   "nuclearProgramIPs": 2400,
+   "buildArmyIPs": 600,
+},
+ {
+   "dataName": "VNM",
+   "buildArmyIPs": 480,
+},
+]
