@@ -85,6 +85,7 @@
     <Compile Include="EconomyInvestmentPatches\EconomyGDPEffectPatch.cs" />
     <Compile Include="EconomyInvestmentPatches\EconomyInequalityEffectPatch.cs" />
     <Compile Include="EconomyInvestmentPatches\EconomyMarketEffectPatch.cs" />
+    <Compile Include="MissionPatches\MissionGDPDifficultyPatch.cs" />
     <Compile Include="NationalValuesPatches\ArmyInvestmentUpkeepPatch.cs" />
     <Compile Include="OtherInvestmentPatches\FundingEffectPatch.cs" />
     <Compile Include="NationalValuesPatches\BaseInvestmentPointPatch.cs" />

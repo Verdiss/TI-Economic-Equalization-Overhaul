@@ -35,6 +35,8 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 ### State of the Mod
 This mod is a very early stage, and bugs, unintended behaviors, and imbalances are all but guaranteed. If you encounter a bug, or feel strongly that something should be adjusted, either open an issue in this github repo, or contact Verdiss on the Pavonis Interactive Discord server.
 
+Currently, no changes to AI have been made, and as such AI will behave very differently with this mod than without. AI adjustments will be made in future updates.
+
 
 ### Installation Info
 Version 0.1.0 of this mod is built for Terra Invicta version 0.3.23
@@ -57,7 +59,7 @@ OR 2B: Open the Unity Mod Manager executable, select Terra Invicta, go to the Mo
 
 
 ### Version History
-Mod 0.1.0 - Game Version 0.3.23 - 2022-10-14 - Initial Release
+Mod 0.1.0 - Game Version 0.3.23 - 2022-10-15 - Initial Release
 
 
 ### License
