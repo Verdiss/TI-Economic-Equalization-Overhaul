@@ -32,10 +32,14 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 -Research output of a nation rebalanced. A nation no longer recieves a flat 7.5 + education monthly research, however its research also increases linearly with population, not at a ^1.1 rate as vanilla.
 
 
-### State of the Mod
+### Issues & the State of the Mod
 This mod is a very early stage, and bugs, unintended behaviors, and imbalances are all but guaranteed. If you encounter a bug, or feel strongly that something should be adjusted, either open an issue in this github repo, or contact Verdiss on the Pavonis Interactive Discord server.
 
 Currently, no changes to AI have been made, and as such AI will behave less intelligently with this mod than without. AI adjustments will be made in future updates.
+
+Known Issues:
+
+-Ideological support impacts of the Unity and Spoils investments are temporarily disabled due to difficulties balancing their amounts
 
 
 ### Installation Info

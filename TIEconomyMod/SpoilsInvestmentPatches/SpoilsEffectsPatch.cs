@@ -37,32 +37,28 @@ namespace TIEconomyMod
 
             //-------Propoganda Effect-------
             //I do not understand the PropogandOnPop call chain clearly enough to know how it scales with population, and thus how to make it scale how I want.
-            //What I do know is that large countries will have about 50-100x as many spoils completions as vanilla.
-            //As such, I am choosing to temporarily divide the propoganda effect by 80
-            //This might produce a useful amount of propoganda, or might not. It shouldn't cause too much, which is my immediate concern
-            //The alternative is to simply disable the section entirely
+            //For now, the best way for me to handle this issue is to simply disable the system entirely, pending additional research and math
             //TODO look into the PropogandOnPop call chain in detail to understand how population size relates to ideology shifting
-            Dictionary<TIFactionState, int> dictionary = new Dictionary<TIFactionState, int>();
-            foreach (TIControlPoint controlPoint2 in __instance.controlPoints)
-            {
-                if (controlPoint2.owned)
-                {
-                    if (!dictionary.ContainsKey(controlPoint2.faction))
-                    {
-                        dictionary.Add(controlPoint2.faction, 1);
-                    }
-                    else
-                    {
-                        dictionary[controlPoint2.faction]++;
-                    }
-                }
-            }
-            foreach (TIFactionState key in dictionary.Keys)
-            {
-                float strength = (0f - __instance.education * (float)(dictionary[key] / __instance.numControlPoints)) / 4f;
-                strength = strength / 80f;
-                __instance.PropagandaOnPop(key.ideology, strength);
-            }
+            //Dictionary<TIFactionState, int> dictionary = new Dictionary<TIFactionState, int>();
+            //foreach (TIControlPoint controlPoint2 in __instance.controlPoints)
+            //{
+            //    if (controlPoint2.owned)
+            //    {
+            //        if (!dictionary.ContainsKey(controlPoint2.faction))
+            //        {
+            //            dictionary.Add(controlPoint2.faction, 1);
+            //        }
+            //        else
+            //        {
+            //            dictionary[controlPoint2.faction]++;
+            //        }
+            //    }
+            //}
+            //foreach (TIFactionState key in dictionary.Keys)
+            //{
+            //    float strength = (0f - __instance.education * (float)(dictionary[key] / __instance.numControlPoints)) / 4f;
+            //    __instance.PropagandaOnPop(key.ideology, strength);
+            //}
 
 
             //Below as vanilla

@@ -22,32 +22,31 @@ namespace TIEconomyMod
 
             //-------Propoganda Effect-------
             //As with the Spoils propoganda effect, it's unfortunately beyond me to understand this well enough to get things where I want them
-            //For the time being, I will simply reduce the strength of the propoganda effect to 1/80th vanilla, as with the spoils patch
-            //This may reduce it so much that it has no effect, but most certainly eliminates any chance the effect is too strong
+            //For now, the best way for me to handle this issue is to simply disable the system entirely, pending additional research and math
             //TODO change this once I understand PropogandaOnPop
-            Dictionary<TIFactionState, int> dictionary = new Dictionary<TIFactionState, int>();
-            foreach (TIControlPoint controlPoint in __instance.controlPoints)
-            {
-                if (controlPoint.owned)
-                {
-                    if (!dictionary.ContainsKey(controlPoint.faction))
-                    {
-                        dictionary.Add(controlPoint.faction, 1);
-                    }
-                    else
-                    {
-                        dictionary[controlPoint.faction]++;
-                    }
-                    if (controlPoint.controlPointType == ControlPointType.Religion)
-                    {
-                        dictionary[controlPoint.faction] += TemplateManager.global.religionUnityPublicOpinionBonusStrength;
-                    }
-                }
-            }
-            foreach (TIFactionState key in dictionary.Keys)
-            {
-                __instance.PropagandaOnPop(key.ideology, (float)dictionary[key] * (1/80) * TemplateManager.global.UnityPublicOpinionBaseStrength);
-            }
+            //Dictionary<TIFactionState, int> dictionary = new Dictionary<TIFactionState, int>();
+            //foreach (TIControlPoint controlPoint in __instance.controlPoints)
+            //{
+            //    if (controlPoint.owned)
+            //    {
+            //        if (!dictionary.ContainsKey(controlPoint.faction))
+            //        {
+            //            dictionary.Add(controlPoint.faction, 1);
+            //        }
+            //        else
+            //        {
+            //            dictionary[controlPoint.faction]++;
+            //        }
+            //        if (controlPoint.controlPointType == ControlPointType.Religion)
+            //        {
+            //            dictionary[controlPoint.faction] += TemplateManager.global.religionUnityPublicOpinionBonusStrength;
+            //        }
+            //    }
+            //}
+            //foreach (TIFactionState key in dictionary.Keys)
+            //{
+            //    __instance.PropagandaOnPop(key.ideology, (float)dictionary[key] * TemplateManager.global.UnityPublicOpinionBaseStrength);
+            //}
 
             //Below as vanilla
             __instance.AddToCohesion(__instance.unityPriorityCohesionChange);
