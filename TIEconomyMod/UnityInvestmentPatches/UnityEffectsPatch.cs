@@ -22,7 +22,8 @@ namespace TIEconomyMod
 
             //-------Propoganda Effect-------
             //As with the Spoils propoganda effect, it's unfortunately beyond me to understand this well enough to get things where I want them
-            //Instead, I'm going to go with the same heavy-handed 1/80th multiplier on the propoganda strength
+            //For the time being, I will simply reduce the strength of the propoganda effect to 1/80th vanilla, as with the spoils patch
+            //This may reduce it so much that it has no effect, but most certainly eliminates any chance the effect is too strong
             //TODO change this once I understand PropogandaOnPop
             Dictionary<TIFactionState, int> dictionary = new Dictionary<TIFactionState, int>();
             foreach (TIControlPoint controlPoint in __instance.controlPoints)
@@ -45,7 +46,7 @@ namespace TIEconomyMod
             }
             foreach (TIFactionState key in dictionary.Keys)
             {
-                __instance.PropagandaOnPop(key.ideology, (float)dictionary[key] * TemplateManager.global.UnityPublicOpinionBaseStrength);
+                __instance.PropagandaOnPop(key.ideology, (float)dictionary[key] * (1/80) * TemplateManager.global.UnityPublicOpinionBaseStrength);
             }
 
             //Below as vanilla

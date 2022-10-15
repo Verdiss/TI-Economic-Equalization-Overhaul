@@ -60,7 +60,7 @@ namespace TIEconomyMod
             foreach (TIFactionState key in dictionary.Keys)
             {
                 float strength = (0f - __instance.education * (float)(dictionary[key] / __instance.numControlPoints)) / 4f;
-                strength = strength / 80f; //TODO temporary fix
+                strength = strength / 80f;
                 __instance.PropagandaOnPop(key.ideology, strength);
             }
 
