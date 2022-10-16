@@ -19,10 +19,10 @@ namespace TIEconomyMod.UnityInvestmentPatches
             //This keeps the cohesion gain rate of nations of different populations but identical demographic stats otherwise the same
 
             //For a full explanation of the logic backing this change, see WelfareInequalityEffectPatch
-            //Goal is 0.5 monthly cohesion gain at 100% unity and 0 education, with education scaling down to at worst half that afterwards as in vanilla
-            //Using the same method as with the welfare inequality, this gives me a single investment effect of 166667 / population cohesion change
+            //Goal is 1.0 monthly cohesion gain at 100% unity and 0 education, with education scaling down to at worst half that afterwards as in vanilla
+            //Using the same method as with the welfare inequality, this gives me a single investment effect of 333333 / population cohesion change
 
-            float cohesionGain = 166667f / __instance.population;
+            float cohesionGain = 333333f / __instance.population;
 
             float cohesionEducationMult = 1f - Mathf.Min(0.5f, (0.5f * __instance.education / 10f)); //100% mult at 0 education, at worst 50% mult at or above 10 education
 

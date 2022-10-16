@@ -24,10 +24,10 @@ namespace TIEconomyMod
             //I want to preserve this democracy impact, so the calculation must also take this into account
             //I say at 0 democracy, you get 100% of the unrest reduction, and at 10 democracy, you geto 0% -- same as vanilla
 
-            //I want an unrest reduction rate of 0.33 a month for a 30k GDP per capita nation at 0 democracy
-            //Using the same method as with the welfare inequality, this gives me a single investment effect of 111111 / population unrest reduction at 0 democracy
+            //I want an unrest reduction rate of 0.67 a month for a 30k GDP per capita nation at 0 democracy
+            //Using the same method as with the welfare inequality, this gives me a single investment effect of 222222 / population unrest reduction at 0 democracy
 
-            float baseUnrestReduction = 111111f / __instance.population;
+            float baseUnrestReduction = 222222f / __instance.population;
 
             float democracyMult = (10f - __instance.democracy) / 10f; //0% at 10 democracy, 100% at 0
 
