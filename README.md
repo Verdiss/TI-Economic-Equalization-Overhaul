@@ -81,7 +81,7 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 -Slightly increased GDP growth, and slightly increased the benefit of high education on GDP growth
 
--Increased yearly funding gain from the funding investment from 0.2 to 0.3, as it felt far too weak
+-Vastly Increased yearly funding gain from the funding investment from 0.2 to 3 annual funding, which now means a funding investment gives you the same amount as a spoils investment after 20 years have passed
 
 -Greatly increased effects of most events that grant investment completions
 

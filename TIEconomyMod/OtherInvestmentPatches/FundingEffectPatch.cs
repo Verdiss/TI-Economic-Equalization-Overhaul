@@ -16,15 +16,11 @@ namespace TIEconomyMod
         {
             //Patches the monthly funding gain from completing a funding investment
             
-            //A vanilla country with 10 IP can complete 10 funding investments a month
-            //Each gives 7 funding and thus in total yearly funding income increases by 70 a month
-            //This is at the cost of 30 control cap, so the funding increase to control cost ratio is about 2 for this middle-range country
+            //Spoils gives a instant funding of around 60 money, at the cost of a fair bit of greenhouse gas and half an investment of welfare in inequality
+            //It seems balanced to make the monetary benefit of a funding investment be about equal to that of a spoils investment after a period of 20 game years
+            //The funding gained from a funding investment is annual, so an annual income of 3 money is equal to a spoils investment after 20 years
 
-            //A patched country gets 10 IP per control cost.
-            //To keep the same ratio of funding gain to control cost, it is thus necessary to change the reward to be 0.2 funding gained
-            //Changed to 0.3 for better balance
-
-            __result = 0.3f;
+            __result = 3f;
 
             return false; //Skip original getter
         }
