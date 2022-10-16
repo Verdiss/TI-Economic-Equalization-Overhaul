@@ -20,8 +20,9 @@ namespace TIEconomyMod
             //For a full explanation of the logic backing this change, see WelfareInequalityEffectPatch
             //I want an education gain rate of 0.025 a month for a 30k GDP per capita nation
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 8333 / population education gain
+            //After some testing, this was changed to 12000 / population
 
-            __result = 8333 / __instance.population;
+            __result = 12000 / __instance.population;
 
             return false; //Skip original getter
         }

@@ -31,9 +31,9 @@ namespace TIEconomyMod
             //It can complete 1 economy investment a month at 100% priority. That gives 0.2 Bn GDP, increasing its GDP by 2%.
             //Its 0.2 million population also gain the same $1000 per capita GDP, though all at once as opposed to in 100 $10 divisions.
 
-            float baseGDPChange = 100000000; //One investment gives 0.10 Bn GDP -- this gives approx 1.0% monthly economic growth if at 100% economic investment priority
-            float resourceRegionsBonus = __instance.currentResourceRegions * 10000000; //Plus 0.01 Bn per resource region
-            float coreEcoRegionsBonus = __instance.currentCoreEconomicRegions * 10000000; //Plus 0.01 Bn per core economic region
+            float baseGDPChange = 70000000; //One investment gives 0.07 Bn GDP -- this gives approx 0.7% monthly economic growth if at 100% economic investment priority
+            float resourceRegionsBonus = __instance.currentResourceRegions * 7000000; //Plus 0.007 Bn per resource region
+            float coreEcoRegionsBonus = __instance.currentCoreEconomicRegions * 7000000; //Plus 0.007 Bn per core economic region
             //TODO consider whether the way resource and economic regions scale economic growth relative to country size is appropriate
 
             float summedGDPChange = baseGDPChange + resourceRegionsBonus + coreEcoRegionsBonus;
@@ -41,9 +41,9 @@ namespace TIEconomyMod
 
             float democracyMult = 0.8f + (__instance.democracy * (0.4f / 10f)); //get 80% of the gdp at 0 democracy, 120% at 10 democracy
             float cohesionMult = 1.1f - (Mathf.Abs(__instance.cohesion - 5f) * (0.2f / 5f)); //get 90% of gdp at 0 or 10 cohesion, 110% at 5 cohesion
-            float educationMult = 0.5f + (__instance.education * (1f / 10f)); //get 50% of the gdp at 0 education, 150% at 10 education, and even more at higher education values
+            float educationMult = 0.6f + (__instance.education * (0.8f / 10f)); //get 60% of the gdp at 0 education, 140% at 10 education, and even more at higher education values
 
-            float perCapGDPMult = 4f - Mathf.Min(3f, __instance.perCapitaGDP * (3f / 15000f)); //Poor nation catch-up: Up to a 400% gdp gain modifier at close to 0 gdp per capita, returning to 100% at 15k gdp per capita and staying at 100% for higher values
+            float perCapGDPMult = 5f - Mathf.Min(4f, __instance.perCapitaGDP * (4f / 15000f)); //Poor nation catch-up: Up to a 500% gdp gain modifier at close to 0 gdp per capita, returning to 100% at 15k gdp per capita and staying at 100% for higher values
 
             float finalGDPChange = summedGDPChange * democracyMult * cohesionMult * educationMult * perCapGDPMult; //Final value for overall country GDP change taking all modifiers into account
             
