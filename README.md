@@ -25,7 +25,7 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 
 -Other changes to investment effects such as spoils and funding amount to flatten out the amount gained per investment to be constant regardless of country size.
 
--Adjusted costs of spaceflight, boost, mission control, build army, build navy, build nuclear weapon, and build space defense to reflect the greatly increased investment points available to most nations.
+-Adjusted costs of many investments, including greatly increasing the cost of flat effect investments like mission control or build army to reflect the greatly increased investment points available to most nations.
 
 -Adjusted upkeep cost of armies to be dependent on the host country's tech level. Armies cost 15 IP per base tech level above 3 (minimum of 1 IP if at or below tech 3), doubled when away from home or in combat.
 
@@ -49,7 +49,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.2 of this mod is built for Terra Invicta version 0.3.23
+Version 0.1.3 of this mod is built for Terra Invicta version 0.3.23
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -71,6 +71,21 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Version History
+0.1.3 - 2022-10-17:
+
+-Changed IP costs of knowledge, unity, and military investments to 1, which fixes a math error causing these investments to be 2 or 3 times weaker than intended
+
+-Doubled the impacts to democracy, unrest, military tech, cohesion, and inequality of all investments. This reflects a change in mod goals to mirror the behavior of larger vanilla nations as opposed to smaller
+
+-Knowledge effects to democracy and education only improved by 33% this patch, as they were buffed 50% in an earlier patch
+
+-Slightly increased GDP growth, and slightly increased the benefit of high education on GDP growth
+
+-Increased yearly funding gain from the funding investment from 0.2 to 0.3, as it felt far too weak
+
+-Greatly increased effects of most events that grant investment completions
+
+
 0.1.2 - 2022-10-16:
 
 -Increased global research amounts by 30%, and increased impact from high education values, to better capture vanilla research values for large/developed nations

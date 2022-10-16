@@ -2,7 +2,7 @@
   "Id": "EconomyMod",
   "DisplayName": "Economy Mod",
   "Author": "Verdiss",
-  "Version": "0.1.2",
+  "Version": "0.1.3",
   "ManagerVersion": "0.25.0",
   "GameVersion": "0.3.23",
   "AssemblyName": "TIEconomyMod.dll",
