@@ -22,8 +22,9 @@ namespace TIEconomyMod
 
             //A patched country gets 10 IP per control cost.
             //To keep the same ratio of funding gain to control cost, it is thus necessary to change the reward to be 0.2 funding gained
+            //Changed to 0.3 for better balance
 
-            __result = 0.2f;
+            __result = 0.3f;
 
             return false; //Skip original getter
         }
