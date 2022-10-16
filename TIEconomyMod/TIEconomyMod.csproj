@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ModFiles\ModInfo.json" />
+    <None Include="ModFiles\Templates\TIEffectTemplate.json" />
     <None Include="ModFiles\Templates\TIGlobalConfig.json" />
     <None Include="ModFiles\Templates\TINationTemplate.json" />
   </ItemGroup>
