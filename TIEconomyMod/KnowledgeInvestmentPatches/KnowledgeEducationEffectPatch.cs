@@ -22,7 +22,7 @@ namespace TIEconomyMod
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 8333 / population education gain
             //After some testing, this was changed to 12000 / population
 
-            __result = 12000 / __instance.population;
+            __result = 12000f / __instance.population;
 
             return false; //Skip original getter
         }

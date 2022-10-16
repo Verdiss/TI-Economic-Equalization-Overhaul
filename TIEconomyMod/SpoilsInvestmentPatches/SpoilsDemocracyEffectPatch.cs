@@ -22,7 +22,7 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
             //I want an democracy reduction rate of 0.01 a month for a 30k GDP per capita nation
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 3333 / population democracy change
 
-            __result = 0f - (3333 / __instance.population);
+            __result = -3333f / __instance.population;
 
             return false; //Skip original getter
         }

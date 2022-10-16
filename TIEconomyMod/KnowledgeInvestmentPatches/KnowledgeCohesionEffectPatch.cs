@@ -24,8 +24,8 @@ namespace TIEconomyMod
 
             //The cohesion change from knowledge is a centering effect, drawing cohesion to the median 5 rating, so some additonal logic is required
 
-            float cohesionChangeAmount = Math.Min(Mathf.Abs(__instance.cohesion - 5f), (16667 / __instance.population)); //Calculate the amount of change and prevent overshooting 5
-            if (__instance.cohesion > 5)
+            float cohesionChangeAmount = Math.Min(Mathf.Abs(__instance.cohesion - 5f), (16667f / __instance.population)); //Calculate the amount of change and prevent overshooting 5
+            if (__instance.cohesion > 5f)
             {
                 cohesionChangeAmount *= -1f; //Make it reduce cohesion instead if it's currently above 5
             }

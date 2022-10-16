@@ -21,7 +21,7 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
             //I want an inequality gain rate of 0.025 a month for a 30k GDP per capita nation
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 8333 / population democracy change
 
-            float inequalityGain = 8333 / __instance.population;
+            float inequalityGain = 8333f / __instance.population;
             float inequalityResourceRegionMult = 1f + (0.2f * __instance.currentResourceRegions); //20% more inequality per resource region
 
             __result = inequalityGain * inequalityResourceRegionMult;

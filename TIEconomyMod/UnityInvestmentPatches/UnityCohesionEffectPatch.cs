@@ -22,7 +22,7 @@ namespace TIEconomyMod.UnityInvestmentPatches
             //Goal is 0.5 monthly cohesion gain at 100% unity and 0 education, with education scaling down to at worst half that afterwards as in vanilla
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 166667 / population cohesion change
 
-            float cohesionGain = 166667 / __instance.population;
+            float cohesionGain = 166667f / __instance.population;
 
             float cohesionEducationMult = 1f - Mathf.Min(0.5f, (0.5f * __instance.education / 10f)); //100% mult at 0 education, at worst 50% mult at or above 10 education
 
