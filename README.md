@@ -61,6 +61,8 @@ OR 2B: Open the Unity Mod Manager executable, select Terra Invicta, go to the Mo
 
 4: Now open the game and start a new game. If the investment point cost of the lower half investments appears unchanged (I.e. boost costs a vanilla 2 investment points, not 40), the game must be restarted until these values change.
 
+UPDATING: When updating this mod, completely remove the old version of the mod and replace it with the new.
+
 
 ### Version History
 0.1.1 - 2022-10-15:
