@@ -17,11 +17,11 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 
 -Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
 
--Economy investments give a constant amount of gdp, plus a small amount per resource or core economic region, which is then modified by several demographics then split across the population.
+-Economy investments give a constant amount of GDP, plus a small amount per resource or core economic region, which is then modified by several demographics then split across the population in the form of GDP per capita.
 
--Countries with <$15,000 gdp per capita recieve up to 4 times the gdp growth from economy investments as those over this level.
+-Countries with <$15,000 GDP per capita recieve up to 5 times the GDP growth from economy investments as those over this level.
 
--Small adjustments to the relationships between things such as education and gdp growth, broadly maintaining vanilla levels of impact.
+-Small adjustments to the relationships between things such as education and GDP growth, broadly maintaining vanilla levels of impact.
 
 -Other changes to investment effects such as spoils and funding amount to flatten out the amount gained per investment to be constant regardless of country size.
 
@@ -43,7 +43,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.0 of this mod is built for Terra Invicta version 0.3.23
+Version 0.1.1 of this mod is built for Terra Invicta version 0.3.23
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -63,7 +63,16 @@ OR 2B: Open the Unity Mod Manager executable, select Terra Invicta, go to the Mo
 
 
 ### Version History
-Mod 0.1.0 - Game Version 0.3.23 - 2022-10-15 - Initial Release
+0.1.1 - 2022-10-15:
+-Fixed welfare and unity investments increasing, rather than decreasing, inequality and democracy, respectively
+-Greatly reduced and equalized costs of direct investment
+-Increased education and democracy gain from knowledge priority by about 50%
+-Reduced GDP growth from economy investments by about 30%, to be less influenced by education, and greatly increased GDP growth from economy investments for nations with very low GDP per capita
+-Adjusted monthly research values to be less impacted by high or low levels of GDP per capita, broadly reducing the amount of research produced worldwide
+
+
+0.1.0 - Game Version 0.3.23 - 2022-10-15:
+-Initial Release
 
 
 ### License
