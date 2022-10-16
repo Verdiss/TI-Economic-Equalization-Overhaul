@@ -23,9 +23,9 @@ namespace TIEconomyMod
             //But the reality is that this is way too complicated a relationship between population, GDP, GDP per capita, and the various multipliers here
             //So I'm gonna go with old faithful: Guess and check some values until it's where I want it to be.
 
-            float populationResearch = __instance.population_Millions * 0.00225f; //Removed better-than-linear scaling, kept vanilla 0.00225 multiplier
+            float populationResearch = __instance.population_Millions * 0.00292f; //Removed better-than-linear scaling, increased vanilla 0.00225 multiplier to 0.00292 (30% increase)
 
-            float educationEffect = Mathf.Pow(__instance.education, 2f); //Vanilla, get 100x research at 10 education than at 1
+            float educationEffect = Mathf.Pow(__instance.education, 2.1f); //Changed from vanilla ^2, now get 126x research at 10 education than at 1 (rather than 100x)
 
             float gdpPerCapEffect = Mathf.Max(__instance.perCapitaGDP / 20000f, 0.6f); //Floored at 60% research at 12000 gdp per capita, 200% at 40k, and indefinitely upward
             float democracyEffect = Mathf.Pow(Mathf.Max(__instance.democracy, 0.1f), 0.2f); //Vanilla, gives about 60% boost at 10 democracy, 40% penalty at 0

@@ -34,7 +34,7 @@
     "SpoResCH4_ppm": 3E-07,
     "SpoN2O_ppm": 6E-08,
     "SpoResN2O_ppm": 3E-08,
-    "DI_baseInvestmentPointCost_Money": 40,
+    "DI_baseInvestmentPointCost_Money": 50,
     "DI_perControlPointIPMultiplier_Money": 0,
     "DI_baseInvestmentPointCost_Influence": 0.25,
     "DI_perControlPointIPMultiplier_Influence": 0,

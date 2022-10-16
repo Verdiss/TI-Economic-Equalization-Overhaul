@@ -35,7 +35,13 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 ### Issues & the State of the Mod
 This mod is a very early stage, and bugs, unintended behaviors, and imbalances are all but guaranteed. If you encounter a bug, or feel strongly that something should be adjusted, either open an issue in this github repo, or contact Verdiss on the Pavonis Interactive Discord server.
 
-Currently, no changes to AI have been made, and as such AI will behave less intelligently with this mod than without. AI adjustments will be made in future updates.
+Current focuses for future updates are:
+
+-Bug fixing
+
+-Rebalancing numbers
+
+-AI behavior adjustments
 
 Known Issues:
 
@@ -43,7 +49,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.1 of this mod is built for Terra Invicta version 0.3.23
+Version 0.1.2 of this mod is built for Terra Invicta version 0.3.23
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -65,6 +71,15 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Version History
+0.1.2 - 2022-10-16:
+
+-Increased global research amounts by 30%, and increased impact from high education values, to better capture vanilla research values for large/developed nations
+
+-Slightly increased the previously vastly reduced direct investment monetary cost
+
+-Adjustments to AI evaluations of nations based on IP, should be in line with vanilla AI behavior as opposed to wildly over-valuing large nations.
+
+
 0.1.1 - 2022-10-15:
 
 -Fixed welfare and unity investments increasing, rather than decreasing, inequality and democracy, respectively
