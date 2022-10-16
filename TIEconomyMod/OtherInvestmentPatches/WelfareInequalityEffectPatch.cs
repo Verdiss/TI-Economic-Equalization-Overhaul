@@ -34,7 +34,7 @@ namespace TIEconomyMod
             //Each investment still removes 0.00083 inequality, as this is a function only of population which is still 20 million.
             //120 investments a month removes 0.0996 inequality a month, twice the amount due to twice the economic expense for the same population.
 
-            __result = 16667 / __instance.population;
+            __result = -16667f / __instance.population;
 
             return false; //Skip original getter
         }
