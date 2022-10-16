@@ -41,7 +41,7 @@ namespace TIEconomyMod
 
             float democracyMult = 0.8f + (__instance.democracy * (0.4f / 10f)); //get 80% of the gdp at 0 democracy, 120% at 10 democracy
             float cohesionMult = 1.1f - (Mathf.Abs(__instance.cohesion - 5f) * (0.2f / 5f)); //get 90% of gdp at 0 or 10 cohesion, 110% at 5 cohesion
-            float educationMult = 0.6f + (__instance.education * (0.8f / 10f)); //get 60% of the gdp at 0 education, 140% at 10 education, and even more at higher education values
+            float educationMult = 0.7f + (__instance.education * (0.9f / 10f)); //get 70% of the gdp at 0 education, 160% at 10 education, and even more at higher education values
 
             float perCapGDPMult = 5f - Mathf.Min(4f, __instance.perCapitaGDP * (4f / 15000f)); //Poor nation catch-up: Up to a 500% gdp gain modifier at close to 0 gdp per capita, returning to 100% at 15k gdp per capita and staying at 100% for higher values
 
