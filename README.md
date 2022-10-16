@@ -64,14 +64,20 @@ OR 2B: Open the Unity Mod Manager executable, select Terra Invicta, go to the Mo
 
 ### Version History
 0.1.1 - 2022-10-15:
+
 -Fixed welfare and unity investments increasing, rather than decreasing, inequality and democracy, respectively
+
 -Greatly reduced and equalized costs of direct investment
+
 -Increased education and democracy gain from knowledge priority by about 50%
+
 -Reduced GDP growth from economy investments by about 30%, to be less influenced by education, and greatly increased GDP growth from economy investments for nations with very low GDP per capita
+
 -Adjusted monthly research values to be less impacted by high or low levels of GDP per capita, broadly reducing the amount of research produced worldwide
 
 
 0.1.0 - Game Version 0.3.23 - 2022-10-15:
+
 -Initial Release
 
 
