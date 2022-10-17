@@ -35,7 +35,7 @@ In short, the goal of the mod is to remove the unintuitive and unrealistic meta-
 
 
 ### Issues & the State of the Mod
-This mod is a very early stage, and bugs, unintended behaviors, and imbalances are all but guaranteed. If you encounter a bug, or feel strongly that something should be adjusted, either open an issue in this github repo, or contact Verdiss on the Pavonis Interactive Discord server.
+This mod is a very early stage, and bugs, unintended behaviors, and imbalances are all but guaranteed. If you encounter a bug, or feel strongly that something should be adjusted, either open an issue in this github repo or leave a comment on one of the mirror sites.
 
 Current focuses for future updates are:
 
