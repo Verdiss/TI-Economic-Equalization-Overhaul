@@ -117,5 +117,8 @@
     <None Include="ModFiles\Templates\TIGlobalConfig.json" />
     <None Include="ModFiles\Templates\TINationTemplate.json" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModFiles\Economic Equalization Overhaul.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
