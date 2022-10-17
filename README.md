@@ -1,4 +1,4 @@
-# TIEconomyMod
+# Econominc Equalization Overhaul
 This is a fan mod for the game Terra Invicta. It modifies the way national economies work, to better represent the way countries of different sizes compare.
 
 
@@ -8,6 +8,8 @@ In vanilla Terra Invicta, the way country size, country utility, and country con
 The primary cause of these bad relationships has to do with the cube-root relationship between country GDP and investment points, and with the up to 6 times multiplier on the control cost of a nation its number of control points.
 
 As such, the primary function of this mod is to remove both of those issues. Investment points is a linear function of GDP, as is the control cost of a nation. Surrounding these core changes are a huge number of adjustments to the way national investments work, to account for this change and to otherwise even out the rate that a country's utility changes with its size. In this mod, a country that is twice as large is twice as good, but twice as expensive to control.
+
+In short, the goal of the mod is to remove the unintuitive and unrealistic meta-strategizing that surrounds all choices regarding country management, country unifications, and country prioritization.
 
 
 ### Summary of Effects
@@ -49,7 +51,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.3 of this mod is built for Terra Invicta version 0.3.23
+Version 0.1.4 of this mod is built for Terra Invicta version 0.3.26
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -71,6 +73,13 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Version History
+0.1.4 - 2022-10-17:
+
+-Verified mod compatibility with game version 0.3.26
+
+-Adjusted Ukraine's starting build army progress to reflect a vanilla change
+
+
 0.1.3 - 2022-10-17:
 
 -Changed IP costs of knowledge, unity, and military investments to 1, which fixes a math error causing these investments to be 2 or 3 times weaker than intended
