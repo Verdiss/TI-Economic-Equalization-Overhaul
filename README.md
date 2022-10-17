@@ -11,7 +11,7 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 
 
 ### Summary of Effects
--National monthly investment points are equal to 1 per 10 Billion GDP. Countries with a per capita GDP less than $15,000 recieve up to a 30% penalty to investment points, however.
+-National monthly investment points are equal to 1 per 10 Billion GDP. Countries with a per capita GDP less than $15,000 receive up to a 30% penalty to investment points, however.
 
 -The control cap cost of a nation is equal to its investment points / 10, which is then split across each control point. Control cost  of a nation is no longer dependent on the number of control points, as in vanilla.
 
@@ -19,7 +19,7 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 
 -Economy investments give a constant amount of GDP, plus a small amount per resource or core economic region, which is then modified by several demographics then split across the population in the form of GDP per capita.
 
--Countries with <$15,000 GDP per capita recieve up to 5 times the GDP growth from economy investments as those over this level.
+-Countries with <$15,000 GDP per capita receive up to 5 times the GDP growth from economy investments as those over this level.
 
 -Small adjustments to the relationships between things such as education and GDP growth, broadly maintaining vanilla levels of impact.
 
@@ -29,7 +29,7 @@ As such, the primary function of this mod is to remove both of those issues. Inv
 
 -Adjusted upkeep cost of armies to be dependent on the host country's tech level. Armies cost 15 IP per base tech level above 3 (minimum of 1 IP if at or below tech 3), doubled when away from home or in combat.
 
--Research output of a nation rebalanced. A nation no longer recieves a flat 7.5 + education monthly research, however its research also increases linearly with population, not at a ^1.1 rate as vanilla.
+-Research output of a nation rebalanced. A nation no longer receives a flat 7.5 + education monthly research, however its research also increases linearly with population, not at a ^1.1 rate as vanilla.
 
 
 ### Issues & the State of the Mod
