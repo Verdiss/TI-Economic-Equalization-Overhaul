@@ -231,10 +231,11 @@
    "dataName": "TUR",
    "initSpaceIPs": 40,
 },
- {
-   "dataName": "UKR",
-   "initSpaceIPs": 1000,
-},
+  {
+    "dataName": "UKR",
+    "initSpaceIPs": 1000,
+    "buildArmyIPs": 900,
+  },
  {
    "dataName": "GBR",
    "initSpaceIPs": 1000,
