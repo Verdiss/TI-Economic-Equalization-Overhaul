@@ -1,4 +1,4 @@
-# Econominc Equalization Overhaul
+# Economic Equalization Overhaul
 This is a fan mod for the game Terra Invicta. It modifies the way national economies work, to better represent the way countries of different sizes compare.
 
 
