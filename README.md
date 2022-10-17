@@ -122,5 +122,11 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 -Initial Release
 
 
+### Links
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2876597188)
+
+[Nexus](https://www.nexusmods.com/terrainvicta/mods/9)
+
+
 ### License
 Do whatever you want with the code or files appearing in this repository.
