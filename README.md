@@ -123,7 +123,7 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Links
-[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2876597188)
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2876646709)
 
 [Nexus](https://www.nexusmods.com/terrainvicta/mods/9)
 
