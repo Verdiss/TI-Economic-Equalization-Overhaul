@@ -17,7 +17,7 @@ In short, the goal of the mod is to remove the unintuitive and unrealistic meta-
 
 -The control cap cost of a nation is equal to its investment points / 10, which is then split across each control point. Control cost  of a nation is no longer dependent on the number of control points, as in vanilla.
 
--Arrival International Relations, Unity Movements, Great Nations, and Arrival Governance each reduce the control cost of a nation to be to the power of 0.98, 0.95, 0.90, or 0.85, depending on how many of these techs are researched. Larger nationss benefit significantly more.
+-Arrival International Relations, Unity Movements, Great Nations, and Arrival Governance each reduce the control cost of a nation to be to the power of 0.98, 0.95, 0.90, or 0.85, depending on how many of these techs are researched. Larger nations benefit significantly more.
 
 -Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
 
