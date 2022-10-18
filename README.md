@@ -17,6 +17,8 @@ In short, the goal of the mod is to remove the unintuitive and unrealistic meta-
 
 -The control cap cost of a nation is equal to its investment points / 10, which is then split across each control point. Control cost  of a nation is no longer dependent on the number of control points, as in vanilla.
 
+-Arrival Internation Relations, Unity Movements, Great Nations, and Arrival Governance each reduce the control cost of a nation to be to the power of 0.98, 0.95, 0.90, or 0.85, depending on how many of these techs are researched. Larger nationss benefit significantly more.
+
 -Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
 
 -Economy investments give a constant amount of GDP, plus a small amount per resource or core economic region, which is then modified by several demographics then split across the population in the form of GDP per capita.
@@ -51,7 +53,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.4 of this mod is built for Terra Invicta version 0.3.26
+Version 0.1.5 of this mod is built for Terra Invicta version 0.3.26
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -73,6 +75,11 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Version History
+0.1.5 - 2022-10-18:
+
+-Added effect to four global technologies (Arrival International Relations, Unity Movements, Great Nations, and Arrival Governance) that reduces the control cost of a nation to be the base to the power of 0.98, 0.95, 0.90, or 0.85 depending on the number of these techs researched
+
+
 0.1.4 - 2022-10-17:
 
 -Verified mod compatibility with game version 0.3.26
