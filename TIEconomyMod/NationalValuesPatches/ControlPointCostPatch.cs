@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace TIEconomyMod
 {
@@ -19,8 +20,35 @@ namespace TIEconomyMod
         {
             if (__result != 0) //Will be 0 and should stay 0 if the nation's controller is the aliens
             {
-                float totalControlCost = __instance.economyScore / 10f; //Total cost to control the entire nation. 1 cost per 10 IP
-                __result = totalControlCost / __instance.numControlPoints; //Total cost is split across the control points
+                float baseControlCost = __instance.economyScore / 10f; //Total cost to control the entire nation. 1 cost per 10 IP
+
+                int numTechs = 0; //Number of control-cost-reducing techs that have been researched
+                if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("ArrivalInternationalRelations")) numTechs++;
+                if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("UnityMovements")) numTechs++;
+                if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("GreatNations")) numTechs++;
+                if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("ArrivalGovernance")) numTechs++;
+
+                float power = 1f; //Power to raise the base control cost to
+                switch (numTechs)
+                {
+                    case 1:
+                        power = 0.98f; //1500 cost nation -> 1296, 200 cost nation -> 180, 20 cost nation -> 19
+                        break;
+                    case 2:
+                        power = 0.95f; //1500 cost nation -> 1041, 200 cost nation -> 153, 20 cost nation -> 17
+                        break;
+                    case 3:
+                        power = 0.90f; //1500 cost nation -> 722, 200 cost nation -> 118, 20 cost nation -> 15
+                        break;
+                    case 4:
+                        power = 0.85f; //1500 cost nation -> 501, 200 cost nation -> 90, 20 cost nation -> 13
+                        break;
+                    default:
+                        power = 1f; //No techs, keep baseline control cost
+                        break;
+                }
+
+                __result = Mathf.Pow(baseControlCost, power) / __instance.numControlPoints; //Total cost is split across the control points
             }
         }
     }

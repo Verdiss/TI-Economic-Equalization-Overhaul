@@ -2,81 +2,102 @@
   {
     "dataName": "Effect_LocalProsperity",
     "instantEffect": "NationProsperity",
-    "value": 200,
+    "value": 200
   },
   {
     "dataName": "Effect_MajorLocalProsperity",
     "instantEffect": "NationProsperity",
-    "value": 400,
+    "value": 400
   },
   {
     "dataName": "Effect_LocalProsperity50",
     "instantEffect": "NationProsperity",
-    "value": 1000,
+    "value": 1000
   },
   {
     "dataName": "Effect_LocalProsperity200",
     "instantEffect": "NationProsperity",
-    "value": 4000,
+    "value": 4000
   },
   {
     "dataName": "Effect_SecondaryProsperity1",
     "instantEffect": "NationProsperity",
-    "value": 20,
+    "value": 20
   },
   {
     "dataName": "Effect_SecondaryProsperity2",
     "instantEffect": "NationProsperity",
-    "value": 40,
+    "value": 40
   },
   {
     "dataName": "Effect_SecondaryProsperity3",
     "instantEffect": "NationProsperity",
-    "value": 60,
+    "value": 60
   },
   {
     "dataName": "Effect_FreePriorityWelfare10",
     "instantEffect": "FreePriorityWelfare",
-    "value": 200,
+    "value": 200
   },
   {
     "dataName": "Effect_FreePriorityWelfare50",
     "instantEffect": "FreePriorityWelfare",
-    "value": 1000,
+    "value": 1000
   },
   {
     "dataName": "Effect_FreePriorityWelfare200",
     "instantEffect": "FreePriorityWelfare",
-    "value": 4000,
+    "value": 4000
   },
   {
     "dataName": "Effect_FreePriorityKnowledge10",
     "instantEffect": "FreePriorityKnowledge",
-    "value": 200,
+    "value": 200
   },
   {
     "dataName": "Effect_FreePriorityKnowledge20",
     "instantEffect": "FreePriorityKnowledge",
-    "value": 400,
+    "value": 400
   },
   {
     "dataName": "Effect_FreePriorityMilitary20",
     "instantEffect": "FreePriorityMilitary",
-    "value": 400,
+    "value": 400
   },
   {
     "dataName": "Effect_FreePriorityMilitary200",
     "instantEffect": "FreePriorityMilitary",
-    "value": 4000,
+    "value": 4000
   },
   {
     "dataName": "Effect_SecondaryFreePriorityMilitary20",
     "instantEffect": "FreePriorityMilitary",
-    "value": 400,
+    "value": 400
   },
   {
     "dataName": "Effect_FreePriorityFunding1",
     "instantEffect": "FreePriorityFunding",
-    "value": 30,
+    "value": 30
   },
+  {
+    "dataName": "Effect_ControlCostPow",
+    "instantEffect": "",
+    "operation": "",
+    "value": null,
+    "instantRnd": null,
+    "strValue": "",
+    "effectTarget": "AllHumanFactions",
+    "effectSecondaryTarget": "",
+    "effectDuration": "permanent",
+    "stackable": false,
+    "duration_months": -1,
+    "initialFactionsStr": [
+      "",
+      ""
+    ],
+    "contexts": [
+      "",
+      ""
+    ]
+  }
 ]

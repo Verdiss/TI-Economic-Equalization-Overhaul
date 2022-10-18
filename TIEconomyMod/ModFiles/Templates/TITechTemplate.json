@@ -1,0 +1,38 @@
+[
+  {
+    "dataName": "ArrivalInternationalRelations",
+    "effects": [
+      "Effect_ControlCostPow",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "dataName": "UnityMovements",
+    "effects": [
+      "Effect_ControlCostPow",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "dataName": "GreatNations",
+    "effects": [
+      "Effect_ControlCostPow",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "dataName": "ArrivalGovernance",
+    "effects": [
+      "Effect_ControlCostPow",
+      "",
+      "",
+      ""
+    ]
+  }
+]
