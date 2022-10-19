@@ -21,9 +21,9 @@ In short, the goal of the mod is to remove the unintuitive and unrealistic meta-
 
 -Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
 
--Economy investments give a constant amount of GDP, plus a small amount per resource or core economic region, which is then modified by several demographics then split across the population in the form of GDP per capita.
+-Economy investments gives an amount of GDP, as opposed to an amount of GDP per capita (though the tooltip shows the distributed GDP per capita). This makes all economies grow at the same % rate, disregarding modifiers.
 
--Countries with <$15,000 GDP per capita receive up to 5 times the GDP growth from economy investments as those over this level.
+-GDP growth from economy investments is based on an exponential decay function of the country's GDP per capita, which gives a nation with 1000 gdp per capita nearly 6 times the growth as a country with 45000.
 
 -Small adjustments to the relationships between things such as education and GDP growth, broadly maintaining vanilla levels of impact.
 
@@ -53,7 +53,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.5 of this mod is built for Terra Invicta version 0.3.26
+Version 0.1.6 of this mod is built for Terra Invicta version 0.3.26
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -75,6 +75,21 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 
 ### Version History
+0.1.6 - 2022-10-19:
+
+-Reworked economy investment GDP growth. Growth now receives a modifier determined by an exponential decay function of GDP per capita. This speeds up growth in poor nations, and slows down growth in rich nations.
+
+-GDP gain from resource and core economic regions now has diminishing returns, with the first region giving 20% more growth, the second giving 10%, the third 5%, and the fourth and beyond 2%.
+
+-Additional changes to base GDP gain, and impact from demographic stats such as education, that go alongside the exponential decay system.
+
+-These changes together should result in a country with 20% economy priority gaining 15% annual GDP growth if poor (<15k GDP per capita), 5% if moderately rich (~50k GDP per capita), and <1% if very rich (80k+ GDP per capita).
+
+-Reduced the money gained from spoils by around 40%.
+
+-Reduced the annual money gained from funding by 50%.
+
+
 0.1.5 - 2022-10-18:
 
 -Added effect to four global technologies (Arrival International Relations, Unity Movements, Great Nations, and Arrival Governance) that reduces the control cost of a nation to be the base to the power of 0.98, 0.95, 0.90, or 0.85 depending on the number of these techs researched
