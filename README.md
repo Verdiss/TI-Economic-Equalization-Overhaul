@@ -83,7 +83,7 @@ UPDATING: When updating this mod, completely remove the old version of the mod a
 
 -Additional changes to base GDP gain, and impact from demographic stats such as education, that go alongside the exponential decay system.
 
--These changes together should result in a country with 20% economy priority gaining 15% annual GDP growth if poor (<15k GDP per capita), 5% if moderately rich (~50k GDP per capita), and <1% if very rich (80k+ GDP per capita).
+-These changes together should result in a country with 20% economy priority gaining 10% annual GDP growth if poor (<15k GDP per capita), 5% if moderately rich (~50k GDP per capita), and <1% if very rich (80k+ GDP per capita).
 
 -Reduced the money gained from spoils by around 40%.
 
