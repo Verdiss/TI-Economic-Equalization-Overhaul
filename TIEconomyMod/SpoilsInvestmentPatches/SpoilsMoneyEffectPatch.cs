@@ -18,9 +18,9 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
 
             //A Vanilla nation with 10 IP can extract about 2000 money/month, at the cost of 30 control cap for 66 monthly money per control cost
             //To maintain balance, lets keep that monthly money to control cost rate the same, which means a spoils reward of about 66 money for 1 IP (which costs 1 control cost)
-            float baseMoneyGained = 50f; //Base 50 money
-            float resourceRegionBonusMoney = TemplateManager.global.spoilsPriorityMoneyPerResourceRegion * __instance.currentResourceRegions; //5 money per resource region
-            float lowDemocracyBonusMoney = TemplateManager.global.spoilsDemocracyMoneyModifier * (10f - __instance.democracy); //3.5 money per democracy less than 10
+            float baseMoneyGained = 30f; //Base 30 money
+            float resourceRegionBonusMoney = 3f * __instance.currentResourceRegions; //3 money per resource region
+            float lowDemocracyBonusMoney = 1.5f * (10f - __instance.democracy); //2 money per democracy less than 10
 
             __result = baseMoneyGained + resourceRegionBonusMoney + lowDemocracyBonusMoney;
 

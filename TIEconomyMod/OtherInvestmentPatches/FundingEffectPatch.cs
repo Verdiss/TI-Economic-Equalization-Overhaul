@@ -18,9 +18,9 @@ namespace TIEconomyMod
             
             //Spoils gives a instant funding of around 60 money, at the cost of a fair bit of greenhouse gas and half an investment of welfare in inequality
             //It seems balanced to make the monetary benefit of a funding investment be about equal to that of a spoils investment after a period of 20 game years
-            //The funding gained from a funding investment is annual, so an annual income of 3 money is equal to a spoils investment after 20 years
+            //The funding gained from a funding investment is annual, so an annual income of 1.5 money is equal to a spoils investment (about 30-40 money) after 20 years
 
-            __result = 3f;
+            __result = 1.5f;
 
             return false; //Skip original getter
         }
