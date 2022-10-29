@@ -23,7 +23,7 @@ namespace TIEconomyMod
             //But the reality is that this is way too complicated a relationship between population, GDP, GDP per capita, and the various multipliers here
             //So I'm gonna go with old faithful: Guess and check some values until it's where I want it to be.
 
-            float baseResearch = 0.00400f; //Increased vanilla 0.00225 multiplier to 0.00400
+            float baseResearch = 0.00370f; //Increased vanilla 0.00225 multiplier to 0.00370
             
             float popMultiplier = __instance.population_Millions; //Removed vanilla better-than-linear scaling.
 
