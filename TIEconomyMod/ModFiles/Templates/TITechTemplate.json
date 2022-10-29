@@ -34,5 +34,14 @@
       "",
       ""
     ]
+  },
+  {
+    "dataName": "Accelerando",
+    "effects": [
+      "Effect_Economy_BasePCGDPIncrease02",
+      "Effect_ControlCostPow",
+      "",
+      ""
+    ]
   }
 ]

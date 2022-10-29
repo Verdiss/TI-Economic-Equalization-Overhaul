@@ -27,6 +27,7 @@ namespace TIEconomyMod
                 if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("UnityMovements")) numTechs++;
                 if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("GreatNations")) numTechs++;
                 if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("ArrivalGovernance")) numTechs++;
+                if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("Accelerando")) numTechs++;
 
                 float power = 1f; //Power to raise the base control cost to
                 switch (numTechs)
@@ -42,6 +43,9 @@ namespace TIEconomyMod
                         break;
                     case 4:
                         power = 0.85f; //1500 cost nation -> 501, 200 cost nation -> 90, 20 cost nation -> 13
+                        break;
+                    case 5:
+                        power = 0.80f; //1500 cost nation -> 347, 200 cost nation -> 69, 20 cost nation -> 11
                         break;
                     default:
                         power = 1f; //No techs, keep baseline control cost
