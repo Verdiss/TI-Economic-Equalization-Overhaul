@@ -16,13 +16,14 @@ namespace TIEconomyMod
         public static bool GetMilitaryPriorityTechLevelChangeOverwrite(ref float __result, TINationState __instance)
         {
             //Patch changes the military tech effect of a military investment to scale inversely with population size
+            //It also adds a catch-up boost to gain based on how far behind the global maximum tech level the country is
             //This keeps the military tech improvement rate of nations of different populations but identical demographic stats otherwise the same
 
             //For a full explanation of the logic backing this change, see WelfareInequalityEffectPatch
             //I want an military tech gain rate of 0.025 a month for a 30k GDP per capita nation
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 8333 / population military tech gain
 
-            float idealMilTechGain = 8333f / __instance.population;
+            float baseMilTechChange = 5500f / __instance.population; //Adjusted to 5500 from 8333 to account for the catchup mechanic
 
 
             //For countries with >0 unrest, some proportion of the military investment will go to reducing that unrest instead of boosting mil tech
@@ -36,7 +37,14 @@ namespace TIEconomyMod
             //If it is 0, all focus is on mil tech, and 100% of the ideal mil tech should be gained
             float unrestMult = 1f - unrestReductionRatio;
 
-            __result = idealMilTechGain * unrestMult;
+
+            //Additionally, add a catch-up multiplier dependent on how far behind the max tech level the country is
+            //A bonus 50% tech gain per full tech level behind the global max
+            float catchUpMult = Mathf.Max(1.0f + (0.5f * (__instance.maxMilitaryTechLevel - __instance.militaryTechLevel)), 1.0f); //Max to 1 is to prevent weirdness if somehow mil tech is above max mil tech
+
+
+
+            __result = baseMilTechChange * unrestMult * catchUpMult;
 
             return false; //Skip original getter
         }
