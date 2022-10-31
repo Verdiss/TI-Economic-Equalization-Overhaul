@@ -16,7 +16,7 @@ namespace TIEconomyMod.AIPatches
         {
             //Patches AI evaluation of a nation's value/importance to account for the higher IP amount in large modded nations
 
-            float num = nation.economyScore * 10f; //Changed from economyScore^3, which was vanilla GDP in billions, to this, which is modded GDP in billions. Vanilla and modded nations will be evaluated the same given a certain GDP.
+            float num = nation.economyScore * 100f; //Changed from economyScore^3, which was vanilla GDP in billions, to this, which is modded GDP in billions. Vanilla and modded nations will be evaluated the same given a certain GDP.
 
             //Below as vanilla
             float num2 = 100f * faction.aiValues.wantSpaceFacilities * faction.aiValues.wantSpaceWarCapability;

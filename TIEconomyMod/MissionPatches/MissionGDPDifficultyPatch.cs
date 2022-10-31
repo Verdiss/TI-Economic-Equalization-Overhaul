@@ -25,7 +25,7 @@ namespace TIEconomyMod.MissionPatches
             TINationState tINationState = TIUtilities.ObjectToNation(target, missionPhase: true);
             if (tINationState != null)
             {
-                float vanillaEcoScore = Mathf.Pow(tINationState.economyScore * 10f, 0.33f); //This is the vanilla economyScore the country would have
+                float vanillaEcoScore = Mathf.Pow(tINationState.economyScore * 100f, 0.33f); //This is the vanilla economyScore the country would have
                 __result = vanillaEcoScore * TemplateManager.global.TIMissionModifier_TargetNationGDP_Multiplier;
             }
 

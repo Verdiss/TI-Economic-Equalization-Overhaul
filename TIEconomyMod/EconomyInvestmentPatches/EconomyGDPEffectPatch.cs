@@ -18,7 +18,7 @@ namespace TIEconomyMod
             //This patch changes the economy investment's GDP effect from increasing gdp per capita by a flat(ish) amount, to increasing gdp by a flat(ish) amount and distributing that across the pop as gdp per capita
             //The most significant change is that GDP growth is dependent on an exponential decay function off of per capita GDP. This makes developing poor countries much more effective than developing rich ones, accounting for all factors
 
-            float baseGDPChange = 33000000f; //One investment gives a base amount of 0.033 Bn GDP
+            float baseGDPChange = 330000000f; //One investment gives a base amount of 0.33 Bn GDP
 
             //Resource and core economic region multiplier
             //Get a diminishing-return % bonus to growth based on total number of these regions

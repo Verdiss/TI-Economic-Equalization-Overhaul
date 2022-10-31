@@ -16,14 +16,14 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
         {
             //Patch changes the instant money effect of a spoils investment to be a flat value, not scaled by nation size
 
-            float baseMoneyGained = 20f; //Base 20 money
+            float baseMoneyGained = 200f; //Base 200 money
 
             //Add money per resource region, with diminishing returns
             float resourceRegionBonusMoney = 0f;
-            if (__instance.currentResourceRegions >= 1) resourceRegionBonusMoney += 10f; //10 extra for the 1st region
-            if (__instance.currentResourceRegions >= 2) resourceRegionBonusMoney += 5f; //5 extra for the 2nd
-            if (__instance.currentResourceRegions >= 3) resourceRegionBonusMoney += 2.5f; //2.5 extra for the 3rd
-            if (__instance.currentResourceRegions >= 4) resourceRegionBonusMoney += 1.25f * (__instance.currentResourceRegions - 3); //1.2 extra for the 4th and on
+            if (__instance.currentResourceRegions >= 1) resourceRegionBonusMoney += 100f; //100 extra for the 1st region
+            if (__instance.currentResourceRegions >= 2) resourceRegionBonusMoney += 50f; //5 extra for the 2nd
+            if (__instance.currentResourceRegions >= 3) resourceRegionBonusMoney += 25f; //25 extra for the 3rd
+            if (__instance.currentResourceRegions >= 4) resourceRegionBonusMoney += 12.5f * (__instance.currentResourceRegions - 3); //12.5 extra for the 4th and on
 
 
             //Up to 50% extra money at 0 democracy, 0% extra at 10 democracy

@@ -25,7 +25,7 @@ namespace TIEconomyMod.InvestmentPointPatches
                 baseCost = TemplateManager.global.nationalInvestmentArmyFactorAway; //Expected to be 2
             }
 
-            float techFactor = Mathf.Max(1f, 15f * (__instance.homeNation.militaryTechLevel - 3f)); //Army costs 15 times base per tech level above 3. If tech is 3 or below, factor is clamped to 1.
+            float techFactor = Mathf.Max(1f, 2f * (__instance.homeNation.militaryTechLevel - 3f)); //Army costs 2 times base per tech level above 3. If tech is 3 or below, factor is clamped to 1.
 
             __result = baseCost * techFactor;
 

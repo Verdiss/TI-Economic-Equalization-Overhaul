@@ -2,82 +2,82 @@
   {
     "dataName": "Effect_LocalProsperity",
     "instantEffect": "NationProsperity",
-    "value": 200
+    "value": 20
   },
   {
     "dataName": "Effect_MajorLocalProsperity",
     "instantEffect": "NationProsperity",
-    "value": 400
+    "value": 40
   },
   {
     "dataName": "Effect_LocalProsperity50",
     "instantEffect": "NationProsperity",
-    "value": 1000
+    "value": 100
   },
   {
     "dataName": "Effect_LocalProsperity200",
     "instantEffect": "NationProsperity",
-    "value": 4000
+    "value": 400
   },
   {
     "dataName": "Effect_SecondaryProsperity1",
     "instantEffect": "NationProsperity",
-    "value": 20
+    "value": 2
   },
   {
     "dataName": "Effect_SecondaryProsperity2",
     "instantEffect": "NationProsperity",
-    "value": 40
+    "value": 4
   },
   {
     "dataName": "Effect_SecondaryProsperity3",
     "instantEffect": "NationProsperity",
-    "value": 60
+    "value": 6
   },
   {
     "dataName": "Effect_FreePriorityWelfare10",
     "instantEffect": "FreePriorityWelfare",
-    "value": 200
+    "value": 20
   },
   {
     "dataName": "Effect_FreePriorityWelfare50",
     "instantEffect": "FreePriorityWelfare",
-    "value": 1000
+    "value": 100
   },
   {
     "dataName": "Effect_FreePriorityWelfare200",
     "instantEffect": "FreePriorityWelfare",
-    "value": 4000
+    "value": 400
   },
   {
     "dataName": "Effect_FreePriorityKnowledge10",
     "instantEffect": "FreePriorityKnowledge",
-    "value": 200
+    "value": 20
   },
   {
     "dataName": "Effect_FreePriorityKnowledge20",
     "instantEffect": "FreePriorityKnowledge",
-    "value": 400
+    "value": 40
   },
   {
     "dataName": "Effect_FreePriorityMilitary20",
     "instantEffect": "FreePriorityMilitary",
-    "value": 400
+    "value": 40
   },
   {
     "dataName": "Effect_FreePriorityMilitary200",
     "instantEffect": "FreePriorityMilitary",
-    "value": 4000
+    "value": 400
   },
   {
     "dataName": "Effect_SecondaryFreePriorityMilitary20",
     "instantEffect": "FreePriorityMilitary",
-    "value": 400
+    "value": 40
   },
   {
     "dataName": "Effect_FreePriorityFunding1",
     "instantEffect": "FreePriorityFunding",
-    "value": 30
+    "value": 3
   },
   {
     "dataName": "Effect_ControlCostPow",

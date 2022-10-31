@@ -20,9 +20,9 @@ namespace TIEconomyMod.UnityInvestmentPatches
 
             //For a full explanation of the logic backing this change, see WelfareInequalityEffectPatch
             //Goal is 0.010 monthly democracy reduction at 100% unity
-            //Using the same method as with the welfare inequality, this gives me a single investment effect of 3333 / population democracy change
+            //Using the same method as with the welfare inequality, this gives me a single investment effect of 33333 / population democracy change
 
-            __result = -3333f / __instance.population;
+            __result = -33333f / __instance.population;
 
             return false; //Skip original getter
         }

@@ -22,7 +22,7 @@ namespace TIEconomyMod.AIPatches
             TINationState nation = controlPoint.nation;
 
             //This line adjusted from economyScore^3, which was vanilla GDP in billions, to this, which is modded GDP in billions. Vanilla and modded control points will be evaluated the same given a certain GDP.
-            num += nation.economyScore * 10f;
+            num += nation.economyScore * 100f;
 
             //As vanilla
             num += (nation.spaceFlightProgram ? (100f * faction.aiValues.wantSpaceFacilities * faction.aiValues.wantSpaceWarCapability) : 0f);

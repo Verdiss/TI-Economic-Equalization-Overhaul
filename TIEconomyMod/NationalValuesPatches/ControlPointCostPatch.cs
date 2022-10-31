@@ -20,7 +20,7 @@ namespace TIEconomyMod
         {
             if (__result != 0) //Will be 0 and should stay 0 if the nation's controller is the aliens
             {
-                float baseControlCost = __instance.economyScore / 10f; //Total cost to control the entire nation. 1 cost per 10 IP
+                float baseControlCost = __instance.economyScore; //Total cost to control the entire nation. 1 cost per 1 IP
 
                 int numTechs = 0; //Number of control-cost-reducing techs that have been researched
                 if (GameStateManager.GlobalResearch().finishedTechsNames.Contains("ArrivalInternationalRelations")) numTechs++;

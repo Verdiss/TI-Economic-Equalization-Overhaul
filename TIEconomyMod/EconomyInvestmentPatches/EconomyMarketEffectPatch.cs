@@ -11,10 +11,10 @@ namespace TIEconomyMod.EconomyInvestmentPatches
         public static bool ModifyMarketValuesForEconomyPriorityOverwrite(TIGlobalValuesState __instance)
         {
             //Patches the small increase to metal and noble metal price that is triggered by every economy investment completion
-            //Expect 15000 vs vanilla's 200-400 economy completions a month, so value is 2% of the vanilla value
+            //Expect 1500 vs vanilla's 200-400 economy completions a month, so value is 20% of the vanilla value
 
-            __instance.resourceMarketValues[FactionResource.Metals] *= 1f + Random.Range(2E-07f, 4E-07f);
-            __instance.resourceMarketValues[FactionResource.NobleMetals] *= 1f + Random.Range(1E-07f, 2E-07f);
+            __instance.resourceMarketValues[FactionResource.Metals] *= 1f + Random.Range(2E-06f, 4E-06f);
+            __instance.resourceMarketValues[FactionResource.NobleMetals] *= 1f + Random.Range(1E-06f, 2E-06f);
 
 
             return false; //Skip original method
