@@ -15,22 +15,49 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
         public static bool AddSpoilsPriorityEnvEffectOverwrite(TINationState nation, TIGlobalValuesState __instance)
         {
             //Overwrites the vanilla greenhouse gas emissions values for completing a spoils investment
-            //Necessary due to the scaling to emissions added in the vanilla function that does not work with this mod
+            //Removes the scaling to emissions added in the vanilla function that does not work with this mod
+            //Applies a diminishing returns effect on the emissions from resource regions
 
+            //CO2
             float baseCO2 = TemplateManager.global.SpoCO2_ppm; //Flat per investment completion
-            float resRegionCO2 = TemplateManager.global.SpoResCO2_ppm; //Added per resource region
-            float summedCO2 = baseCO2 + (resRegionCO2 * (float)nation.currentResourceRegions);
-            __instance.AddCO2_ppm(summedCO2);
+            
+            float resRegionCO2Mult = 1.0f;
+            if (nation.currentResourceRegions >= 1) resRegionCO2Mult += 0.80f;
+            if (nation.currentResourceRegions >= 2) resRegionCO2Mult += 0.80f / 2f;
+            if (nation.currentResourceRegions >= 3) resRegionCO2Mult += 0.80f / 4f;
+            if (nation.currentResourceRegions >= 4) resRegionCO2Mult += (0.80f / 8f) * (nation.currentResourceRegions - 3);
+            //This is a stronger increase to emissions compared to the increase in money
 
+            __instance.AddCO2_ppm(baseCO2 * resRegionCO2Mult);
+
+
+            //CH4
             float baseCH4 = TemplateManager.global.SpoCH4_ppm;
-            float resRegionCH4 = TemplateManager.global.SpoResCH4_ppm;
-            float summedCH4 = baseCH4 + (resRegionCH4 * (float)nation.currentResourceRegions);
-            __instance.AddCH4_ppm(summedCH4);
 
+            float resRegionCH4Mult = 1.0f;
+            if (nation.currentResourceRegions >= 1) resRegionCH4Mult += 1.0f;
+            if (nation.currentResourceRegions >= 2) resRegionCH4Mult += 1.0f / 2f;
+            if (nation.currentResourceRegions >= 3) resRegionCH4Mult += 1.0f / 4f;
+            if (nation.currentResourceRegions >= 4) resRegionCH4Mult += (1.0f / 8f) * (nation.currentResourceRegions - 3);
+            //This is double the increase to emissions compared to the increase in money
+
+            __instance.AddCH4_ppm(baseCH4 * resRegionCH4Mult);
+
+
+            //N2O
             float baseN2O = TemplateManager.global.SpoN2O_ppm;
-            float resRegionN2O = TemplateManager.global.SpoResN2O_ppm;
-            float summedN2O = baseN2O + (resRegionN2O * nation.currentResourceRegions);
-            __instance.AddN2O_ppm(summedN2O);
+
+            float resRegionN2OMult = 1.0f;
+            if (nation.currentResourceRegions >= 1) resRegionN2OMult += 1.0f;
+            if (nation.currentResourceRegions >= 2) resRegionN2OMult += 1.0f / 2f;
+            if (nation.currentResourceRegions >= 3) resRegionN2OMult += 1.0f / 4f;
+            if (nation.currentResourceRegions >= 4) resRegionN2OMult += (1.0f / 8f) * (nation.currentResourceRegions - 3);
+            //This is double the increase to emissions compared to the increase in money
+
+            __instance.AddN2O_ppm(baseN2O * resRegionN2OMult);
+
+
+
 
             return false; //Skip the original method
         }

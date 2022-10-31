@@ -27,7 +27,7 @@ namespace TIEconomyMod
             if (totalRegions >= 1) regionsMult += 0.2f; //20% bonus for first region
             if (totalRegions >= 2) regionsMult += 0.1f; //10% bonus for second region
             if (totalRegions >= 3) regionsMult += 0.05f; //5% bonus for third region
-            if (totalRegions >= 4) regionsMult += 0.02f * (totalRegions - 3); //2% bonus for fourth region and beyond
+            if (totalRegions >= 4) regionsMult += 0.025f * (totalRegions - 3); //2.5% bonus for fourth region and beyond
 
             //Demographic stat bonuses
             float educationMult = 1f + (0.15f * __instance.education); //get 15% bonus growth per education point

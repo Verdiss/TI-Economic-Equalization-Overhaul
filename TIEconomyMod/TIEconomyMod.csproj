@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="AIPatches\AIEvaluateControlPointPatch.cs" />
     <Compile Include="AIPatches\AIEvaluateNationPatch.cs" />
+    <Compile Include="EconomyInvestmentPatches\EconomyEnvironmentEffectPatch.cs" />
     <Compile Include="EconomyInvestmentPatches\EconomyGDPEffectPatch.cs" />
     <Compile Include="EconomyInvestmentPatches\EconomyInequalityEffectPatch.cs" />
     <Compile Include="EconomyInvestmentPatches\EconomyMarketEffectPatch.cs" />
