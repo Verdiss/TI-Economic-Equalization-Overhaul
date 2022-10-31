@@ -107,6 +107,7 @@
     <Compile Include="SpoilsInvestmentPatches\SpoilsEnvironmentEffectPatch.cs" />
     <Compile Include="SpoilsInvestmentPatches\SpoilsInequalityEffectPatch.cs" />
     <Compile Include="SpoilsInvestmentPatches\SpoilsMoneyEffectPatch.cs" />
+    <Compile Include="UIPatches\IPTooltipPatch.cs" />
     <Compile Include="UnityInvestmentPatches\UnityCohesionEffectPatch.cs" />
     <Compile Include="UnityInvestmentPatches\UnityDemocracyEffectPatch.cs" />
     <Compile Include="UnityInvestmentPatches\UnityEffectsPatch.cs" />
