@@ -22,9 +22,14 @@ namespace TIEconomyMod.SpoilsInvestmentPatches
             //Using the same method as with the welfare inequality, this gives me a single investment effect of 166667 / population democracy change
 
             float inequalityGain = 166667f / __instance.population;
-            float inequalityResourceRegionMult = 1f + (0.2f * __instance.currentResourceRegions); //20% more inequality per resource region
 
-            __result = inequalityGain * inequalityResourceRegionMult;
+            float resourceRegionsMult = 1f;
+            if (__instance.currentResourceRegions >= 1) resourceRegionsMult += 0.5f; //50% extra inequality for first region, note that you get 33% extra money for the first region
+            if (__instance.currentResourceRegions >= 2) resourceRegionsMult += 0.25f;
+            if (__instance.currentResourceRegions >= 3) resourceRegionsMult += 0.125f;
+            if (__instance.currentResourceRegions >= 4) resourceRegionsMult += 0.0625f * (__instance.currentResourceRegions - 3);
+
+            __result = inequalityGain * resourceRegionsMult;
 
             return false; //Skip original getter
         }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace TIEconomyMod
 {
@@ -23,7 +24,12 @@ namespace TIEconomyMod
             //See the WelfareInequalityEffectPatch for a full explanation on how this number is derived.
 
             float baseInequalityGain = 25000f / __instance.population; //About 14 times weaker than welfare by default
-            float resourceRegionsMult = 1f + (0.1f * __instance.currentResourceRegions); //10% increase to inequality gain per resource region -- note that as is, a resource region gives a better than 10% increase to GDP growth
+
+            float resourceRegionsMult = 1f;
+            if (__instance.currentResourceRegions >= 1) resourceRegionsMult += 0.3f; //30% extra inequality for first region, note that you get 20% extra gdp for the first region
+            if (__instance.currentResourceRegions >= 2) resourceRegionsMult += 0.15f;
+            if (__instance.currentResourceRegions >= 3) resourceRegionsMult += 0.075f;
+            if (__instance.currentResourceRegions >= 4) resourceRegionsMult += (0.0375f * (__instance.currentResourceRegions - 3));
 
             __result = baseInequalityGain * resourceRegionsMult;
 
