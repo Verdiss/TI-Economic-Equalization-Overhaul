@@ -13,25 +13,31 @@ In short, the goal of the mod is to remove the unintuitive and unrealistic meta-
 
 
 ### Summary of Effects
--National monthly investment points are equal to 1 per 10 Billion GDP. Countries with a per capita GDP less than $15,000 receive up to a 30% penalty to investment points, however.
+-National monthly investment points are equal to 1 per 100 Billion GDP.
 
--The control cap cost of a nation is equal to its investment points / 10, which is then split across each control point. Control cost  of a nation is no longer dependent on the number of control points, as in vanilla.
+-Countries with a per capita GDP less than $15,000 receive up to a 30% penalty to investment points.
 
--Arrival International Relations, Unity Movements, Great Nations, and Arrival Governance each reduce the control cost of a nation to be to the power of 0.98, 0.95, 0.90, or 0.85, depending on how many of these techs are researched. Larger nations benefit significantly more.
+-The control cap cost of a nation is equal to its investment points, which is then split across each control point. Control cost  of a nation is no longer dependent on the number of control points, as in vanilla.
 
--Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
+-Arrival International Relations, Unity Movements, Great Nations, Arrival Governance, and Accelerando each reduce the control cost of a nation to be to the power of 0.98, 0.95, 0.90, 0.85, or 0.80, depending on how many of these techs are researched. Larger nations benefit significantly more.
 
 -Economy investments gives an amount of GDP, as opposed to an amount of GDP per capita (though the tooltip shows the distributed GDP per capita). This makes all economies grow at the same % rate, disregarding modifiers.
 
--GDP growth from economy investments is based on an exponential decay function of the country's GDP per capita, which gives a nation with 1000 gdp per capita nearly 6 times the growth as a country with 45000.
+-GDP growth from economy investments has diminishing returns based on current GDP per capita. It is based on an exponential decay function of the country's GDP per capita, which gives a nation with 1000 gdp per capita nearly 6 times the growth as a country with 45000.
+
+-Investment effects that impact demographic stats such as education, inequality, or cohesion are scaled inversely based on population size. You need 1000 times as many knowledge investments to increase education by 0.1 in a country with 1 billion people compared to a country with 1 million population.
+
+-Education increases at a faster rate at lower education levels, and a slower rate at higher levels. This is an exponential decay function that gives 4 times the gain rate at 0 education compared to 10 education, and 50% of the gain at 15 education compared to 10.
+
+-Military tech gain is increased by a factor depending on how far the nation is behind the global maximum tech level, a linear bonus of 50% extra gain per 1 tech level behind the current maximum.
 
 -Small adjustments to the relationships between things such as education and GDP growth, broadly maintaining vanilla levels of impact.
 
 -Other changes to investment effects such as spoils and funding amount to flatten out the amount gained per investment to be constant regardless of country size.
 
--Adjusted costs of many investments, including greatly increasing the cost of flat effect investments like mission control or build army to reflect the greatly increased investment points available to most nations.
+-Adjusted costs of many investments to reflect the greatly increased investment points available to most nations, or to simplify calculations.
 
--Adjusted upkeep cost of armies to be dependent on the host country's tech level. Armies cost 15 IP per base tech level above 3 (minimum of 1 IP if at or below tech 3), doubled when away from home or in combat.
+-Adjusted upkeep cost of armies to be dependent on the host country's tech level. Armies cost a base upkeep of 1 IP, plus 2 IP per national tech level above 3.
 
 -Research output of a nation rebalanced. A nation no longer receives a flat 7.5 + education monthly research, however its research also increases linearly with population, not at a ^1.1 rate as vanilla.
 
@@ -53,7 +59,7 @@ Known Issues:
 
 
 ### Installation Info
-Version 0.1.6 of this mod is built for Terra Invicta version 0.3.26
+Version 0.2.0 of this mod is built for Terra Invicta version 0.3.27
 
 This mod requires [Unity Mod Manager version 0.25.0](https://www.nexusmods.com/site/mods/21/?tab=description) to be installed on your Terra Invicta executable with the DoorstopProxy installation method.
 
@@ -69,12 +75,29 @@ OR 2B: Open the Unity Mod Manager executable, select Terra Invicta, go to the Mo
 
 3: You should now have a Terra Invicta\Mods\Enabled\TIEconomyMod folder containing a ModInfo.json file, among other things. If so, the mod is correctly installed.
 
-4: Now open the game and start a new game. If the investment point cost of the lower half investments appears unchanged (I.e. boost costs a vanilla 2 investment points, not 40), the game must be restarted until these values change.
+4: Now open the game and start a new game. If the investment point cost of the lower half investments appears unchanged (I.e. boost costs a vanilla 2 investment points, not 4), the game must be restarted until these values change (typically once).
 
 UPDATING: When updating this mod, completely remove the old version of the mod and replace it with the new.
 
 
 ### Version History
+0.2.0 - 2022-10-31:
+
+-Changed IP of a country from 1 IP per 10 billion GDP, to 1 IP per 100 billion GDP, and adjusted all other values to reflect this shift
+
+-Applied a diminishing returns exponential decay to education gain from knowledge, with countries with 0 education gaining 400% the education as countries with 10
+
+-Applied a catch-up bonus to nations military tech levels, equal to 50% additional mil tech gain per 1 military tech behind the current global max tech level
+
+-Spoils inequality, Spoils money, Spoils emissions, Economy inequality, and Economy emissions all now receive a diminishing returns effect from number of resource regions. This prevents unified nations from wildly over-responding to their number of resource regions
+
+-Rebalance to research output, biasing somewhat less to highly educated nations (uneducated nations benefit in their place)
+
+-Added a fifth technology, Accelerando, to the set of techs that reduce the exponent on control cost. With all five, control cost is base^0.80
+
+-True army upkeep is now shown in the investment points tooltip on the nation screen
+
+
 0.1.6 - 2022-10-19:
 
 -Reworked economy investment GDP growth. Growth now receives a modifier determined by an exponential decay function of GDP per capita. This speeds up growth in poor nations, and slows down growth in rich nations.

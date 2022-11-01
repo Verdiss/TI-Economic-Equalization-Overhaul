@@ -4,9 +4,9 @@
   "title": "Economic Equalization Overhaul",
   "Author": "Verdiss",
   "description": "Modifies the way national economies work, to better represent the way countries of different sizes compare.",
-  "Version": "0.1.6",
+  "Version": "0.2.0",
   "ManagerVersion": "0.25.0",
-  "GameVersion": "0.3.26",
+  "GameVersion": "0.3.27",
   "AssemblyName": "TIEconomyMod.dll",
   "EntryMethod": "TIEconomyMod.Main.Load",
   "mod url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2876646709"
