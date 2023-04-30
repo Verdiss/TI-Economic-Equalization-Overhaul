@@ -41,12 +41,18 @@ namespace TIEconomyMod.UIPatches
             int armiesAtHome = nation.armiesAtHome;
             if (armiesAtHome > 0)
             {
-                stringBuilder.AppendLine().AppendLine(Loc.T("UI.Nation.HomeArmiesPenalty", TIUtilities.FormatSmallNumber(TemplateManager.global.nationalInvestmentArmyFactorHome * ArmyInvestmentUpkeepPatch.GetMilTechArmyUpkeepMult(nation)), TIUtilities.FormatSmallNumber((float)armiesAtHome * TemplateManager.global.nationalInvestmentArmyFactorHome)));
+                float milTechArmyUpkeepMult = ArmyInvestmentUpkeepPatch.GetMilTechArmyUpkeepMult(nation);
+                stringBuilder.AppendLine().AppendLine(Loc.T("UI.Nation.HomeArmiesPenalty", 
+                    TIUtilities.FormatSmallNumber(TemplateManager.global.nationalInvestmentArmyFactorHome * milTechArmyUpkeepMult), 
+                    TIUtilities.FormatSmallNumber((float)armiesAtHome * TemplateManager.global.nationalInvestmentArmyFactorHome * milTechArmyUpkeepMult)));
             }
             int deployedArmies = nation.deployedArmies;
             if (deployedArmies > 0)
             {
-                stringBuilder.AppendLine().AppendLine(Loc.T("UI.Nation.AwayArmiesPenalty", TIUtilities.FormatSmallNumber(TemplateManager.global.nationalInvestmentArmyFactorAway * ArmyInvestmentUpkeepPatch.GetMilTechArmyUpkeepMult(nation)), TIUtilities.FormatSmallNumber((float)deployedArmies * TemplateManager.global.nationalInvestmentArmyFactorAway)));
+                float milTechArmyUpkeepMult = ArmyInvestmentUpkeepPatch.GetMilTechArmyUpkeepMult(nation);
+                stringBuilder.AppendLine().AppendLine(Loc.T("UI.Nation.AwayArmiesPenalty", 
+                    TIUtilities.FormatSmallNumber(TemplateManager.global.nationalInvestmentArmyFactorAway * milTechArmyUpkeepMult), 
+                    TIUtilities.FormatSmallNumber((float)deployedArmies * TemplateManager.global.nationalInvestmentArmyFactorAway * milTechArmyUpkeepMult)));
             }
 
             //As vanilla
